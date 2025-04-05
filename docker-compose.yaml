@@ -1,0 +1,15 @@
+services:
+   db:
+    image: mysql:9
+    ports:
+      - 80:80
+    environment:
+      MYSQL_ROOT_PASSWORD: pc3
+      MYSQL_USER: pc3
+      MYSQL_PASSWORD: pc3
+      MYSQL_DATABASE: pc3
+    volumes:
+      - pc3:/var/lib/mysql
+
+volumes:
+  pc3:
